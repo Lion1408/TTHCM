@@ -310,6 +310,8 @@ public class MainActivity extends AppCompatActivity {
         if (vv % 10 >= 5) {
             vv /= 10;
             vv++;
+        } else {
+            vv /= 10;
         }
         binding.scale.setText("Tỉ lệ đúng: " + vv*1.0/100 + "%");
     }
