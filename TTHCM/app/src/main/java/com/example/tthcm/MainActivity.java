@@ -308,9 +308,9 @@ public class MainActivity extends AppCompatActivity {
         Double v = (correctAnswer * 1000.0 / (countQuestion==1?1:countQuestion - 1));
         Integer vv = Integer.valueOf((int) (v*100));
         if (vv % 10 >= 5) {
+            vv /= 10;
             vv++;
         }
-        vv /= 10;
         binding.scale.setText("Tỉ lệ đúng: " + vv*1.0/100 + "%");
     }
 
