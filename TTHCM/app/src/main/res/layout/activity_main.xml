@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/countQuestion"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center|left"
+        android:text="Số câu hỏi: "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/correctAnswer"
+        android:layout_width="200dp"
+        android:gravity="center|left"
+        android:layout_height="30dp"
+        android:text="Trả lời đúng: "
+        app:layout_constraintEnd_toEndOf="@+id/countQuestion"
+        app:layout_constraintStart_toStartOf="@+id/countQuestion"
+        app:layout_constraintTop_toBottomOf="@+id/countQuestion" />
+
+    <TextView
+        android:id="@+id/scale"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:gravity="center|left"
+        android:text="Tỉ lệ đúng: "
+        app:layout_constraintEnd_toEndOf="@+id/correctAnswer"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/correctAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/correctAnswer" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/ansA"
+        app:layout_constraintEnd_toEndOf="@+id/ansA"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ansA"
+        app:layout_constraintTop_toBottomOf="@+id/scale"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/ansA"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="@dimen/height_answer"
+        android:textColor="@color/black"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/purple_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/ansB"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:background="@color/purple_200"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_height="@dimen/height_answer"
+        android:textColor="@color/black"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ansA" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/ansC"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:background="@color/purple_200"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_height="@dimen/height_answer"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ansB" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/ansD"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:background="@color/purple_200"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_height="@dimen/height_answer"
+        android:textColor="@color/black"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ansC" />
+
+    <TextView
+        android:id="@+id/ver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Version mod by Nguyễn Hoàng Lâm"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

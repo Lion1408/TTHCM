@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "380439076882",
+    "firebase_url": "https://tthcm-94735-default-rtdb.firebaseio.com",
+    "project_id": "tthcm-94735",
+    "storage_bucket": "tthcm-94735.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380439076882:android:1df74fbf1694d9324cf8cb",
+        "android_client_info": {
+          "package_name": "com.example.tthcm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "380439076882-befjnh719m5gdc9amimhm4v5tr89q0hp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQYFA20ZLHR1vC_2u4Ya7Pf7zCJ1PJBKE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "380439076882-befjnh719m5gdc9amimhm4v5tr89q0hp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
